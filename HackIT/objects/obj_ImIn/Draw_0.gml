@@ -13,12 +13,12 @@ draw_healthbar(x,y -32, sprite_width*1.4,y,fill_amount,c_white,c_red,c_green,0,1
 //else{
 	
 //}
-draw_set_font(fnt_Type)
+draw_set_font(fnt_type)
 draw_set_color(c_green)
 if(fill_amount < 100){
-	for(var j = 16; j < sprite_height - 32; j += 32){
-		for (var i = 16; i < sprite_width-32; i += 32){
-			draw_text(x+i,y+j,string(irandom(9)))
+	for(var _j = 16; _j < sprite_height - 32; _j += 32){
+		for (var _i = 16; _i < sprite_width-32; _i += 32){
+			draw_text(x+_i,y+_j,string(irandom(9)))
 		}
 	}
 }
